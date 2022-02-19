@@ -1,0 +1,13 @@
+<section class="pagination">
+    <% if (pageArray.length > 1) {%>
+        <% if (lastPage > 3 && pageArray[0] !== 1) { %>
+            <a href="?page=1"> < First </a>
+        <% } %>
+        <% for (let page of pageArray) { %>
+            <a class="<%= pageNumber === page? 'active': ''%>" href="?page=<%= page %> "><%= page %></a>
+        <% } %>
+        <% if (pageArray[2] !== lastPage && lastPage > 3) { %>
+            <a href="?page=<%= lastPage %>"> Last ></a>
+        <% } %>
+    <% } %>
+</section>
