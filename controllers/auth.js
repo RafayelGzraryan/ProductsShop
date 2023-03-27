@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
     debug: true,
     secureConnection: false,
     auth: {
-        user: 'rafayelg82project@gmail.com',
-        pass: 'rafo8223'
+        user: 'user',
+        pass: 'password'
         //api_key: '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'
     }
 });
