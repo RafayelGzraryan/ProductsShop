@@ -17,7 +17,6 @@ const transporter = nodemailer.createTransport({
     auth: {
         user: 'user',
         pass: 'password'
-        //api_key: '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'
     }
 });
 
