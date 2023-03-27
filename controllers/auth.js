@@ -169,7 +169,7 @@ exports.postSignup = (req, res, next) => {
             res.redirect('/login');
             return transporter.sendMail({
                 to: email,
-                from: 'rafayelg82project@gmail.com',
+                from: 'sendgrid_email',
                 subject: "Sign up succeeded",
                 html: '<h1>You successfully signed up!</h1>'
             });
@@ -215,7 +215,7 @@ exports.postResetPassword = (req, res, next) => {
                         res.redirect('/');
                         return transporter.sendMail({
                             to: email,
-                            from: 'rafayelg82project@gmail.com',
+                            from: 'sendgrid_email',
                             subject: "Password reset",
                             html: `
                                 <p>You requested to password reset</p>
